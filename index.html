@@ -16,7 +16,7 @@
 
         <nav class="main-navigation">
           <ul class="main-menu">
-            <li class="main-menu-item"><a class="main-menu-link" href="#">Каталог</a>
+            <li class="main-menu-item"><a class="main-menu-link" href="inner.html">Каталог</a>
               <ul class="sub-menu">
                 <li class="sub-menu-item"><a class="sub-menu-link" href="#">Новинки</a></li>
                 <li class="sub-menu-item"><a class="sub-menu-link" href="#">Сливочное</a></li>
@@ -36,15 +36,82 @@
           <ul class="user-menu">
             <li class="user-menu-item">
               <a class="btn-search" href="#">Поиск</a>
-              <form class="form-search">Здесь будет форма поиска</form>
+              <form class="form-search" action="#" method="get">
+                <label class="visually-hidden" for="form-search">Поиск</label>
+                <input type="search" id="form-search" placeholder="Что ищем?">
+              </form>
             </li>
             <li class="user-menu-item">
               <a class="btn-input" href="#">Вход</a>
-              <form class="form-input">Здесь будет форма входа</form>
+              <form class="form-input" action="#" method="post">
+                <label class="visually-hidden" for="form-input-email">Email</label>
+                <input type="email" id="form-input-email" name="user-email" placeholder="Электронная почта">
+                <label class="visually-hidden" for="form-input-password">Пароль</label>
+                <input type="password" id="form-input-password" name="user-password" placeholder="Пароль">
+                <a class="form-input-button btn" href="#">Войти</a>
+                <a class="form-input-link forgot-link" href="#">Забыли пароль?</a>
+                <a class="form-input-link new-registration-link" href="#">Новая регистрация?</a>
+              </form>
             </li>
             <li class="user-menu-item">
               <a class="btn-basket" href="#">Корзина</a>
-              <form class="form-basket">Здесь будет форма корзины</form>
+              <form class="form-basket">
+                <table class="table-basket">
+                  <caption class="visually-hidden">
+                    Товары в Вашей корзине:
+                  </caption>
+                  <tfoot>
+                    <tr class="basket-total">
+                      <td class="basket-total-price" colspan="5">
+                        <span class="total-price-value">Итого: 750 руб.</span>
+                      </td>
+                    </tr>
+                  </tfoot>
+                  <tbody>
+                    <tr class="table-basket-item table-basket-item-1">
+                      <td class="table-basket-remove">
+                          <button class="basket-item-remove" type="button">
+                            <span>x</span>
+                          </button>
+                      </td>
+                      <td class="basket-preview">
+                        <img class="basket-preview-icon" src="img/preview-icon-1.png" alt="Изображение товара" width="33" height="33">
+                      </td>
+                      <td class="basket-item-name">
+                        <p class="basket-item-name-value">Пломбир с апельсиновым джемом</p>
+                      </td>
+                      <td class="basket-item-price">
+                        <span class="basket-item-amount">1,5 кг x</span>
+                        <span class="basket-item-price">200 руб.</span>
+                      </td>
+                      <td class="basket-item-full-price">
+                        <span class="item-full-price-value">300 руб.</span>
+                      </td>
+                    </tr>
+                    <tr class="table-basket-item table-basket-item-2">
+                      <td class="table-basket-remove">
+                          <button class="basket-item-remove" type="button">
+                            <span>x</span>
+                          </button>
+                      </td>
+                      <td class="basket-preview">
+                        <img class="basket-preview-icon" src="img/preview-icon-2.png" alt="Изображение товара" width="33" height="33">
+                      </td>
+                      <td class="basket-item-name">
+                        <p class="basket-item-name-value">Клубничный пломбир с присыпкой из белого шоколада</p>
+                      </td>
+                      <td class="basket-item-price">
+                        <span class="basket-item-amount">1,5 кг x</span>
+                        <span class="basket-item-price">300 руб.</span>
+                      </td>
+                      <td class="basket-item-full-price">
+                        <span class="item-full-price-value">450 руб.</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <a class="basket-order-btn btn" href="#">Оформить заказ</a>
+              </form>
             </li>
           </ul>
         </nav>
@@ -167,7 +234,7 @@
             <p class="address-paragraph address-paragraph-2">Для заказов по телефону:
               <b class="address-phone">8 812 450-25-25</b>
               (С 10 до 20 ежедневн)  </p>
-            <button class="address-btn btn" type="button">Форма обратно связи</button>
+            <a class="address-btn btn" href="#">Форма обратно связи</a>
           </div>
         </section>
       </main>
