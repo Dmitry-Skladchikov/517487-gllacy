@@ -1,0 +1,31 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #849d8f;
+}
+body * {
+  outline: 2px solid crimson;
+}
+.half-wrapper.sales-block-raspberries {
+  background-color: #a10825;
+  background-image: url("../img/raspberries-background.png");
+}
+.half-wrapper.sales-block-chocolate {
+  background-color: #40261a;
+  background-image: url("../img/chocolate-background.png")
+}
+.about-us {
+  background-color: #efe5d0;
+  background-image: url("../img/waffle-background.jpg")
+}
+.half-wrapper.blog {
+  background-color: #ffffff;
+  background-image: url("../img/strawberry-background.png");
+}
+.half-wrapper.email {
+  background: #f8f7f4;
+}
+.map-block {
+  border-color: #e9e2c7;
+  background-image: url("../img/map-image.jpg")
+}
