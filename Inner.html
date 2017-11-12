@@ -36,77 +36,55 @@
           <ul class="user-menu">
             <li class="user-menu-item">
               <a class="btn-search" href="#">Поиск</a>
-              <form class="form-search" action="#" method="get">
+              <form class="form-search" action="https://echo.htmlacademy.ru" method="get">
                 <label class="visually-hidden" for="form-search">Поиск</label>
                 <input type="search" id="form-search" placeholder="Что ищем?">
               </form>
             </li>
             <li class="user-menu-item">
               <a class="btn-input" href="#">Вход</a>
-              <form class="form-input" action="#" method="post">
+              <form class="form-input" action="https://echo.htmlacademy.ru" method="post">
                 <label class="visually-hidden" for="form-input-email">Email</label>
                 <input type="email" id="form-input-email" name="user-email" placeholder="Электронная почта">
                 <label class="visually-hidden" for="form-input-password">Пароль</label>
                 <input type="password" id="form-input-password" name="user-password" placeholder="Пароль">
-                <a class="form-input-button btn" href="#">Войти</a>
+                <button class="form-input-button btn" type="submit">Войти</button>
                 <a class="form-input-link forgot-link" href="#">Забыли пароль?</a>
                 <a class="form-input-link new-registration-link" href="#">Новая регистрация?</a>
               </form>
             </li>
             <li class="user-menu-item">
               <a class="btn-basket" href="#">Корзина</a>
-              <form class="form-basket">
+              <form class="form-basket" action="https://echo.htmlacademy.ru" method="get">
                 <table class="table-basket">
-                  <caption class="visually-hidden">
-                    Товары в Вашей корзине:
-                  </caption>
+                  <caption class="visually-hidden">Товары в Вашей корзине:</caption>
                   <tbody>
                     <tr class="table-basket-item table-basket-item-1">
                       <td class="table-basket-remove">
-                          <button class="basket-item-remove" type="button">
-                            <span>x</span>
-                          </button>
+                          <button class="basket-item-remove" type="button">x</button>
                       </td>
                       <td class="basket-preview">
                         <img class="basket-preview-icon" src="img/preview-icon-1.png" alt="Изображение товара" width="33" height="33">
                       </td>
-                      <td class="basket-item-name">
-                        <p class="basket-item-name-value">Пломбир с апельсиновым джемом</p>
-                      </td>
-                      <td class="basket-item-price">
-                        <span class="basket-item-amount">1,5 кг x</span>
-                        <span class="basket-item-price">200 руб.</span>
-                      </td>
-                      <td class="basket-item-full-price">
-                        <span class="item-full-price-value">300 руб.</span>
-                      </td>
+                      <td class="basket-item-name">Пломбир с апельсиновым джемом</td>
+                      <td class="basket-item-price">1,5 кг x 200 руб.</td>
+                      <td class="basket-item-full-price">300 руб.</td>
                     </tr>
                     <tr class="table-basket-item table-basket-item-2">
                       <td class="table-basket-remove">
-                          <button class="basket-item-remove" type="button">
-                            <span>x</span>
-                          </button>
+                          <button class="basket-item-remove" type="button">x</button>
                       </td>
                       <td class="basket-preview">
                         <img class="basket-preview-icon" src="img/preview-icon-2.png" alt="Изображение товара" width="33" height="33">
                       </td>
-                      <td class="basket-item-name">
-                        <p class="basket-item-name-value">Клубничный пломбир с присыпкой из белого шоколада</p>
-                      </td>
-                      <td class="basket-item-price">
-                        <span class="basket-item-amount">1,5 кг x</span>
-                        <span class="basket-item-price">300 руб.</span>
-                      </td>
-                      <td class="basket-item-full-price">
-                        <span class="item-full-price-value">450 руб.</span>
-                      </td>
+                      <td class="basket-item-name">Клубничный пломбир с присыпкой из белого шоколада</td>
+                      <td class="basket-item-price">1,5 кг x 300 руб.</td>
+                      <td class="basket-item-full-price">450 руб.</td>
                     </tr>
                   </tbody>
                   <tfoot>
                     <tr class="basket-total">
-                      <td class="basket-total-price" colspan="5">
-                        <span class="total-price-value">Итого: 750 руб.</span>
-                      </td>
+                      <td class="basket-total-price" colspan="5">Итого: 750 руб.</td>
                     </tr>
                   </tfoot>
                 </table>
@@ -138,7 +116,7 @@
 
         <h1 class="main-title">Сливочное мороженое</h1>
 
-        <form class="main-form">
+        <form class="main-form" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="fieldset fieldset-sorting">
             <legend class="main-form-legend">Сортировка</legend>
             <select class="main-form-sorting" name="sorting">
