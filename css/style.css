@@ -37,7 +37,7 @@ body {
   margin: 0;
   padding: 0;
 }
- .main-menu .main-menu-item a {
+ .main-menu .main-menu-item .main-menu-link {
   font-family: "Roboto";
   font-weight: bold;
   font-size: 16px;
@@ -59,6 +59,11 @@ body {
   color: #323232;
 }
 
+.user-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 .user-menu .user-menu-item>a {
   font-family: "Roboto";
   font-weight: medium;
@@ -140,7 +145,7 @@ body {
   line-height: 24px;
 }
 
-.product-section .product-block {
+.product-block {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -312,13 +317,123 @@ body {
   line-height: 24px;
   color: #ffffff;
 }
+
+.table-basket-item {
+  font-family: "Roboto";
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  color: #323232;
+}
+
+.basket-item-price span {
+  color: #999999;
+}
+
+.basket-total .basket-total-price {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  color: #323232;
+}
+
+.basket-order-btn {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.breadcrumbs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumbs-link {
+  font-family: "Roboto";
+  font-weight: noraml;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.breadcrumbs-item:last-child .breadcrumbs-link {
+  text-decoration: none;
+}
+
+.catalog-main-title {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 41px;
+  color: #ffffff;
+}
+
+.main-form *{
+  font-family: "Roboto";
+  font-weight: medium;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.fieldset.fieldset-filler .main-form-legend {
+ line-height: auto;
+}
+
+.fieldset.fieldset-fatness label {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.main-form-sorting:focus {
+  font-size: 16px;
+  line-height: 18px;
+  color: #323232;
+}
+
+.main-form-sorting .sorting-option {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #323232;
+}
+
+.main-form .main-form-btn {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.pages-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pages-list-link {
+  font-family: "Roboto";
+  font-weight: medium;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+a.btn {
+  text-decoration: none;
+}
+
 a.btn:active,
-button.btn:active {
+button.btn:active,
+.main-form-btn:active {
   color: #fceeec;
 }
+
 a:not(.btn):hover {
   color: #ffbc9e;
 }
+
 a:not(.btn):active {
   color: #ffbc9e;
 }
