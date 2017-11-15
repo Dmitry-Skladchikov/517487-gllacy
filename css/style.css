@@ -67,6 +67,33 @@ body {
   color: #ffffff;
 }
 
+.form-search .form-search-input,
+.form-input .form-input-email,
+.form-input .form-input-password {
+  font-family: "Roboto";
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #999999;
+}
+
+.form-input-link.forgot-link,
+.form-input-link.new-registration-link {
+  font-family: "Roboto";
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: #323232;
+}
+
+.form-input-button {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
 .main-header-shedule {
   font-family: "Roboto";
   font-weight: bold;
@@ -142,8 +169,8 @@ body {
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
+  text-decoration: none;
 }
-
 
 .about-us {
   font-family: "Roboto";
@@ -190,15 +217,108 @@ body {
   line-height: 22px;
   color: #5a5a5a;
 }
-.form-email input {
+.form-email .form-email-input {
   font-family: "Roboto";
   font-weight: normal;
-  font-size: 16;
-  line-height: 24;
+  font-size: 16px;
+  line-height: 24px;
   color: #999999;
+}
+.form-email .email-btn {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
 }
 
 .map-block {
   border-color: #e9e2c7;
   background-image: url("../img/map-image.jpg")
+}
+.address-paragraph.address-paragraph-1,
+.address-paragraph.address-paragraph-2 {
+  font-family: "Roboto";
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #323232;
+}
+
+.address-paragraph.address-paragraph-1 .address-value {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #323232;
+}
+
+.address-paragraph.address-paragraph-2 .address-phone  {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #323232;
+}
+
+.address-wrapper .address-btn {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-info-link {
+  font-family: "Roboto";
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  color: #ffffff;
+}
+.info-left-column .footer-info-link:first-child {
+  font-weight: bold;
+}
+
+.copyright-link {
+  font-family: "Roboto";
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: #ffffff;
+}
+.feedback-wrapper .feedback-caption {
+  font-family: "Roboto";
+  font-weight: medium;
+  font-size: 24px;
+  line-height: 28px;
+  color: #323232;
+}
+
+.feedback-form .feedback-user-name,
+.feedback-form .feedback-user-email,
+.feedback-form .feedback-user-message {
+  font-family: "Roboto";
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #999999;
+}
+.feedback-form .feedback-btn {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}
+a.btn:active,
+button.btn:active {
+  color: #fceeec;
+}
+a:not(.btn):hover {
+  color: #ffbc9e;
+}
+a:not(.btn):active {
+  color: #ffbc9e;
 }
