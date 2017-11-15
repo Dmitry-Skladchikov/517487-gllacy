@@ -1,23 +1,23 @@
 @font-face {
-  font-family: "roboto"
-  src: url("../web/roboto.woff2") format=("woff2"),
-       url("../web/roboto.woff") format=("woff");
+  font-family: "Roboto"
+  src: url("../web/roboto.woff2") format("woff2"),
+       url("../web/roboto.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "roboto"
-  src: url("../web/robotobold.woff2") format=("woff2"),
-       url("../web/robotobold.woff") format=("woff");
+  font-family: "Roboto"
+  src: url("../web/robotobold.woff2") format("woff2"),
+       url("../web/robotobold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "roboto"
-  src: url("../web/robotomedium.woff2") format=("woff2"),
-       url("../web/robotomedium.woff") format=("woff");
+  font-family: "Roboto"
+  src: url("../web/robotomedium.woff2") format("woff2"),
+       url("../web/robotomedium.woff") format("woff");
   font-weight: medium;
   font-style: normal;
 }
@@ -38,21 +38,21 @@ body {
   padding: 0;
 }
  .main-menu .main-menu-item a {
-  font-family: "roboto";
+  font-family: "Roboto";
   font-weight: bold;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
 }
 .sub-menu .sub-menu-item .sub-menu-link {
-  font-family: "roboto";
+  font-family: "Roboto";
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
   color: #323232;
 }
 .sub-menu .sub-menu-item:first-child .sub-menu-link {
-  font-family: "roboto";
+  font-family: "Roboto";
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -60,7 +60,7 @@ body {
 }
 
 .user-menu .user-menu-item>a {
-  font-family: "roboto";
+  font-family: "Roboto";
   font-weight: medium;
   font-size: 14px;
   line-height: 16px;
@@ -68,7 +68,7 @@ body {
 }
 
 .main-header-shedule {
-  font-family: "roboto";
+  font-family: "Roboto";
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -76,7 +76,7 @@ body {
 }
 
 .main-header-shedule .main-header-phone {
-  font-family: "roboto";
+  font-family: "Roboto";
   font-weight: bold;
   font-size: 22px;
   line-height: 24px;
@@ -86,7 +86,7 @@ body {
 .half-wrapper.sales-block-raspberries {
   background-color: #a10825;
   background-image: url("../img/raspberries-background.png");
-  font-family: "roboto";
+  font-family: "Roboto";
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
@@ -96,7 +96,7 @@ body {
 .half-wrapper.sales-block-chocolate {
   background-color: #40261a;
   background-image: url("../img/chocolate-background.png");
-  font-family: "roboto";
+  font-family: "Roboto";
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
@@ -121,7 +121,7 @@ body {
 
 
 .product-block .product-item {
-  font-family: "roboto";
+  font-family: "Roboto";
   font-weight: bold;
   color: #ffffff;
 }
@@ -146,17 +146,56 @@ body {
 
 
 .about-us {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #323232;
   background-color: #efe5d0;
   background-image: url("../img/waffle-background.jpg")
 }
+.about-us .about-us-slogan {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #323232;
+}
 
-.half-wrapper.blog {
+.half-wrapper.blog  {
   background-color: #ffffff;
   background-image: url("../img/strawberry-background.png");
+}
+.half-wrapper.blog .blog-new {
+  font-family: "Roboto";
+  font-weight: medium;
+  font-size: 16px;
+  line-height: 22px;
+  color: #323232;
+}
+.half-wrapper.blog .blog-link {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #323232;
 }
 
 .half-wrapper.email {
   background: #f8f7f4;
+}
+.email-sentence {
+  font-family: "Roboto";
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #5a5a5a;
+}
+.form-email input {
+  font-family: "Roboto";
+  font-weight: normal;
+  font-size: 16;
+  line-height: 24;
+  color: #999999;
 }
 
 .map-block {
