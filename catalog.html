@@ -16,10 +16,10 @@
 
         <nav class="main-navigation">
           <ul class="main-menu">
-            <li class="main-menu-item"><a class="main-menu-link" href="#">Каталог</a>
+            <li class="main-menu-item"><a class="main-menu-link main-menu-link-active" href="#">Каталог</a>
               <ul class="sub-menu">
-                <li class="sub-menu-item"><a class="sub-menu-link" href="#">Новинки</a></li>
-                <li class="sub-menu-item"><a class="sub-menu-link" href="#">Сливочное</a></li>
+                <li class="sub-menu-item"><a class="sub-menu-link different-link" href="#">Новинки</a></li>
+                <li class="sub-menu-item"><a class="sub-menu-link sub-menu-link-active" href="#">Сливочное</a></li>
                 <li class="sub-menu-item"><a class="sub-menu-link" href="#">Щербеты</a></li>
                 <li class="sub-menu-item"><a class="sub-menu-link" href="#">Фруктовый лед</a></li>
                 <li class="sub-menu-item"><a class="sub-menu-link" href="#">Мелорин</a></li>
@@ -38,23 +38,23 @@
               <a class="btn-search" href="#">Поиск</a>
               <form class="form-search" action="https://echo.htmlacademy.ru" method="get">
                 <label class="visually-hidden" for="form-search">Поиск</label>
-                <input type="search" id="form-search" placeholder="Что ищем?">
+                <input class="form-search-input" type="search" id="form-search" placeholder="Что ищем?">
               </form>
             </li>
             <li class="user-menu-item">
               <a class="btn-input" href="#">Вход</a>
               <form class="form-input" action="https://echo.htmlacademy.ru" method="post">
                 <label class="visually-hidden" for="form-input-email">Email</label>
-                <input type="email" id="form-input-email" name="user-email" placeholder="Электронная почта">
+                <input class="form-input-email" type="email" id="form-input-email" name="user-email" placeholder="Электронная почта">
                 <label class="visually-hidden" for="form-input-password">Пароль</label>
-                <input type="password" id="form-input-password" name="user-password" placeholder="Пароль">
+                <input class="form-input-password" type="password" id="form-input-password" name="user-password" placeholder="Пароль">
                 <button class="form-input-button btn" type="submit">Войти</button>
                 <a class="form-input-link forgot-link" href="#">Забыли пароль?</a>
                 <a class="form-input-link new-registration-link" href="#">Новая регистрация?</a>
               </form>
             </li>
             <li class="user-menu-item">
-              <a class="btn-basket" href="#">Корзина</a>
+              <a class="btn-basket" href="#">2 Товара</a>
               <form class="form-basket" action="https://echo.htmlacademy.ru" method="get">
                 <table class="table-basket">
                   <caption class="visually-hidden">Товары в Вашей корзине:</caption>
@@ -174,7 +174,7 @@
             <div class="product-image-wrapper">
               <img class="product-item-image" src="img/product-item-image-2.jpg" alt="Изображение мороженого" width="267" height="267">
             </div>
-            <p class="product-item-name">ливочно-кофейное с кусочками шоколада<p>
+            <p class="product-item-name">Сливочно-кофейное с кусочками шоколада<p>
             <p class="product-item-price">
               380&#8381;<span class="product-item-price-smaller">/Кг</span>
             </p>
@@ -283,7 +283,7 @@
         </ul>
 
         <ul class="pages-list">
-          <li class="pages-list-item"><a class="pages-list-link" href="#">1</a></li>
+          <li class="pages-list-item"><a class="pages-list-link here" href="#">1</a></li>
           <li class="pages-list-item"><a class="pages-list-link" href="#">2</a></li>
           <li class="pages-list-item"><a class="pages-list-link" href="#">3</a></li>
           <li class="pages-list-item"><a class="pages-list-link" href="#">4</a></li>

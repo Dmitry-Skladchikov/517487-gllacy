@@ -31,27 +31,44 @@ body {
 body {
   outline: 2px solid crimson;
 }
-.main-navigation .main-menu,
-.main-navigation .main-menu .sub-menu {
+.main-menu,
+.sub-menu {
   list-style: none;
   margin: 0;
   padding: 0;
 }
- .main-menu .main-menu-item .main-menu-link {
+.main-menu-link {
   font-family: "Roboto";
   font-weight: bold;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
 }
-.sub-menu .sub-menu-item .sub-menu-link {
+
+.main-menu-link:hover{
+  color: #333333;
+  text-decoration: none;
+}
+
+.main-menu-link-active {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.sub-menu-link {
   font-family: "Roboto";
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
   color: #323232;
+  text-decoration: none;
 }
-.sub-menu .sub-menu-item:first-child .sub-menu-link {
+
+.sub-menu-link-active {
+  color: #ffffff;
+}
+
+.different-link {
   font-family: "Roboto";
   font-weight: bold;
   font-size: 14px;
@@ -64,17 +81,58 @@ body {
   padding: 0;
   margin: 0;
 }
-.user-menu .user-menu-item>a {
+
+.btn-search {
   font-family: "Roboto";
   font-weight: medium;
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
+  text-decoration: none;
+}
+.btn-search:hover {
+  color: #323232;
 }
 
-.form-search .form-search-input,
-.form-input .form-input-email,
-.form-input .form-input-password {
+.btn-input {
+  font-family: "Roboto";
+  font-weight: medium;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.btn-input:hover {
+  color: #323232;
+}
+
+.btn-basket {
+  font-family: "Roboto";
+  font-weight: medium;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.btn-basket:hover {
+  color: #323232;
+}
+
+.form-search-input,
+.form-input-email,
+.form-input-password {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #323232;
+}
+
+.form-search-input::placeholder,
+.form-input-email::placeholder,
+.form-input-password::placeholder {
   font-family: "Roboto";
   font-weight: normal;
   font-size: 14px;
@@ -250,7 +308,7 @@ body {
   color: #323232;
 }
 
-.address-paragraph.address-paragraph-1 .address-value {
+ .address-value {
   font-family: "Roboto";
   font-weight: bold;
   font-size: 18px;
@@ -258,7 +316,7 @@ body {
   color: #323232;
 }
 
-.address-paragraph.address-paragraph-2 .address-phone  {
+ .address-phone  {
   font-family: "Roboto";
   font-weight: bold;
   font-size: 18px;
@@ -301,15 +359,30 @@ body {
   color: #323232;
 }
 
-.feedback-form .feedback-user-name,
-.feedback-form .feedback-user-email,
-.feedback-form .feedback-user-message {
+.feedback-user-name,
+.feedback-user-email,
+.feedback-user-message {
   font-family: "Roboto";
-  font-weight: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #323232;
+}
+
+.feedback-user-name::placeholder,
+.feedback-user-email::placeholder,
+.feedback-user-message::placeholder {
+  font-family: "Roboto";
+  font-weight: noraml;
   font-size: 16px;
   line-height: 24px;
   color: #999999;
 }
+
+.feedback-user-message::placeholder {
+  color: #999999;
+}
+
 .feedback-form .feedback-btn {
   font-family: "Roboto";
   font-weight: bold;
@@ -394,6 +467,12 @@ body {
   color: #323232;
 }
 
+.main-form-sorting:hover {
+  font-size: 16px;
+  line-height: 18px;
+  color: #323232;
+}
+
 .main-form-sorting .sorting-option {
   font-weight: normal;
   font-size: 14px;
@@ -401,9 +480,17 @@ body {
   color: #323232;
 }
 
-.main-form .main-form-btn {
+.main-form-btn {
   font-size: 16px;
   line-height: 18px;
+}
+
+.main-form-btn:hover {
+  color: #323232;
+}
+
+.main-form-btn:active {
+  color: #323232;
 }
 
 .pages-list{
@@ -418,22 +505,43 @@ body {
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
+  text-decoration: none;
+}
+
+.here {
+  color: #323232;
+}
+
+.pages-list-link:active {
+  color: #323232;
 }
 
 a.btn {
   text-decoration: none;
 }
 
-a.btn:active,
-button.btn:active,
-.main-form-btn:active {
+.btn:active:active {
   color: #fceeec;
 }
 
-a:not(.btn):hover {
+.footer-info-link:hover,
+.footer-info-link:active {
+  color: #ffbc9e;
+}
+.copyright-link:hover,
+.copyright-link:active {
   color: #ffbc9e;
 }
 
-a:not(.btn):active {
+.breadcrumbs-link:hover,
+.breadcrumbs-link:active {
+  color: #ffbc9e;
+}
+.forgot-link:hover,
+.forgot-link:active {
+  color: #ffbc9e;
+}
+.new-registration-link:hover,
+.new-registration-link:active {
   color: #ffbc9e;
 }
