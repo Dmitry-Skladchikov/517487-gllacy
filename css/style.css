@@ -1,30 +1,164 @@
+@font-face {
+  font-family: "roboto"
+  src: url("../web/roboto.woff2") format=("woff2"),
+       url("../web/roboto.woff") format=("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "roboto"
+  src: url("../web/robotobold.woff2") format=("woff2"),
+       url("../web/robotobold.woff") format=("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "roboto"
+  src: url("../web/robotomedium.woff2") format=("woff2"),
+       url("../web/robotomedium.woff") format=("woff");
+  font-weight: medium;
+  font-style: normal;
+}
+
 body {
   padding: 0;
   margin: 0;
   background-color: #849d8f;
 }
-body *{
+
+body {
   outline: 2px solid crimson;
 }
+.main-navigation .main-menu,
+.main-navigation .main-menu .sub-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ .main-menu .main-menu-item a {
+  font-family: "roboto";
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+.sub-menu .sub-menu-item .sub-menu-link {
+  font-family: "roboto";
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #323232;
+}
+.sub-menu .sub-menu-item:first-child .sub-menu-link {
+  font-family: "roboto";
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #323232;
+}
+
+.user-menu .user-menu-item>a {
+  font-family: "roboto";
+  font-weight: medium;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.main-header-shedule {
+  font-family: "roboto";
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.main-header-shedule .main-header-phone {
+  font-family: "roboto";
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
 .half-wrapper.sales-block-raspberries {
   background-color: #a10825;
   background-image: url("../img/raspberries-background.png");
+  font-family: "roboto";
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
 }
+
 .half-wrapper.sales-block-chocolate {
   background-color: #40261a;
-  background-image: url("../img/chocolate-background.png")
+  background-image: url("../img/chocolate-background.png");
+  font-family: "roboto";
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
 }
+
+.sales-block-raspberries b,
+.sales-block-chocolate b  {
+  font-size: 35px;
+  line-height: 41px;
+}
+.sales-block-raspberries .raspberries-btn,
+.sales-block-chocolate .chocolate-btn {
+  line-height: 24px;
+}
+
+.product-section .product-block {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.product-block .product-item {
+  font-family: "roboto";
+  font-weight: bold;
+  color: #ffffff;
+}
+.product-block .product-item .product-item-name {
+  font-weight: medium;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.product-block .product-item .product-item-price {
+  font-size: 45px;
+  line-height: 45px;
+}
+.product-item-price .product-item-price-smaller {
+  font-size: 30px;
+}
+.quick-view-btn {
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+
 .about-us {
   background-color: #efe5d0;
   background-image: url("../img/waffle-background.jpg")
 }
+
 .half-wrapper.blog {
   background-color: #ffffff;
   background-image: url("../img/strawberry-background.png");
 }
+
 .half-wrapper.email {
   background: #f8f7f4;
 }
+
 .map-block {
   border-color: #e9e2c7;
   background-image: url("../img/map-image.jpg")
