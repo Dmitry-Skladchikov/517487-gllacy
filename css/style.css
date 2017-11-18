@@ -28,7 +28,7 @@ body {
   background-color: #849d8f;
 }
 
-body {
+body *{
   outline: 2px solid crimson;
 }
 .main-menu,
@@ -544,4 +544,48 @@ a.btn {
 .new-registration-link:hover,
 .new-registration-link:active {
   color: #ffbc9e;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-around;
+}
+.main-navigation {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-menu {
+  display: flex;
+}
+
+.main-header-logo {
+  align-self: center;
+}
+
+.user-menu {
+  display: flex;
+  justify-content: space-around;
+}
+.main-header-shedule {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.copyright-link {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-info-wrapper {
+  align-self: center;
+}
+
+.socia-wrapper {
+  align-self: center;
 }
