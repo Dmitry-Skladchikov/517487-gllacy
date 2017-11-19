@@ -352,13 +352,22 @@ body *{
   font-weight: bold;
 }
 
-.copyright-link {
+.copyright-wrapper {
   font-family: "Roboto";
   font-weight: normal;
   font-size: 12px;
   line-height: 18px;
   color: #ffffff;
 }
+
+.copyright-link-text {
+  font-family: "Roboto";
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
 .feedback-wrapper .feedback-caption {
   font-family: "Roboto";
   font-weight: medium;
@@ -593,7 +602,7 @@ a.btn {
   display: flex;
   justify-content: space-between;
 }
-.copyright-link {
+.copyright-wrapper {
   display: flex;
   flex-direction: column;
 }
@@ -601,7 +610,6 @@ a.btn {
 .footer-info-wrapper {
   display: flex;
   align-items: center;
-
 }
 
 .info-left-column {
@@ -616,6 +624,6 @@ a.btn {
   align-items: flex-start;
 }
 
-.socia-wrapper {
+.social-wrapper {
   align-self: center;
 }
