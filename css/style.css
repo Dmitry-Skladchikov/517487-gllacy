@@ -55,6 +55,10 @@ body *{
   text-decoration: none;
 }
 
+.sub-menu {
+  display: none;
+}
+
 .sub-menu-link {
   font-family: "Roboto";
   font-weight: normal;
@@ -80,6 +84,10 @@ body *{
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.user-menu-item form {
+  display: none;
 }
 
 .btn-search {
@@ -548,29 +556,37 @@ a.btn {
 
 .main-header {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
+  flex-wrap: wrap;
 }
+
+.main-header-logo {
+  display: flex;
+  margin: auto;
+  flex-basis: 10%;
+
+}
+
 .main-navigation {
   display: flex;
-  justify-content: space-around;
+  flex-basis: 90%;
+
+
 }
 
 .main-menu {
   display: flex;
-}
+  margin-right: auto;
 
-.main-header-logo {
-  align-self: center;
 }
 
 .user-menu {
   display: flex;
-  justify-content: space-around;
 }
+
 .main-header-shedule {
   display: flex;
   flex-direction: column;
-  align-self: flex-end;
 }
 
 .main-footer {
@@ -583,7 +599,21 @@ a.btn {
 }
 
 .footer-info-wrapper {
-  align-self: center;
+  display: flex;
+  align-items: center;
+
+}
+
+.info-left-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.info-right-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .socia-wrapper {
