@@ -31,6 +31,14 @@ body {
 body *{
   outline: 2px solid crimson;
 }
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 27px;
+}
+
 .main-menu,
 .sub-menu {
   list-style: none;
@@ -86,7 +94,9 @@ body *{
   margin: 0;
 }
 
-.user-menu-item form {
+.form-search,
+.form-input,
+.form-basket {
   display: none;
 }
 
@@ -98,6 +108,7 @@ body *{
   color: #ffffff;
   text-decoration: none;
 }
+
 .btn-search:hover {
   color: #323232;
 }
@@ -148,8 +159,8 @@ body *{
   color: #999999;
 }
 
-.form-input-link.forgot-link,
-.form-input-link.new-registration-link {
+.forgot-link,
+.new-registration-link {
   font-family: "Roboto";
   font-weight: normal;
   font-size: 13px;
@@ -173,7 +184,7 @@ body *{
   color: #ffffff;
 }
 
-.main-header-shedule .main-header-phone {
+.main-header-phone {
   font-family: "Roboto";
   font-weight: bold;
   font-size: 22px;
@@ -181,9 +192,10 @@ body *{
   color: #ffffff;
 }
 
-.half-wrapper.sales-block-raspberries {
+.sales-block-raspberries {
   background-color: #a10825;
   background-image: url("../img/raspberries-background.png");
+  background-repeat: no-repeat;
   font-family: "Roboto";
   font-weight: bold;
   font-size: 18px;
@@ -191,9 +203,10 @@ body *{
   color: #ffffff;
 }
 
-.half-wrapper.sales-block-chocolate {
+.sales-block-chocolate {
   background-color: #40261a;
   background-image: url("../img/chocolate-background.png");
+  background-repeat: no-repeat;
   font-family: "Roboto";
   font-weight: bold;
   font-size: 18px;
@@ -201,14 +214,18 @@ body *{
   color: #ffffff;
 }
 
-.sales-block-raspberries b,
-.sales-block-chocolate b  {
+.sales-slogan  {
   font-size: 35px;
   line-height: 41px;
 }
-.sales-block-raspberries .raspberries-btn,
-.sales-block-chocolate .chocolate-btn {
+
+.raspberries-btn,
+.chocolate-btn {
   line-height: 24px;
+}
+
+.product-section {
+  margin-bottom: 40px;
 }
 
 .product-block {
@@ -217,25 +234,29 @@ body *{
     margin: 0;
 }
 
-
-.product-block .product-item {
+.product-item {
   font-family: "Roboto";
   font-weight: bold;
   color: #ffffff;
+  width: 270px;
+  margin-bottom: 40px;
 }
-.product-block .product-item .product-item-name {
+
+.product-item-name {
   font-weight: medium;
   font-size: 16px;
   line-height: 22px;
 }
 
-.product-block .product-item .product-item-price {
+.product-item-price {
   font-size: 45px;
   line-height: 45px;
 }
-.product-item-price .product-item-price-smaller {
+
+.product-item-price-smaller {
   font-size: 30px;
 }
+
 .quick-view-btn {
   font-size: 18px;
   line-height: 24px;
@@ -244,33 +265,38 @@ body *{
 }
 
 .about-us {
+  height: 310px;
+  margin-bottom: 40px;
   font-family: "Roboto";
   font-weight: bold;
   font-size: 16px;
   line-height: 22px;
   color: #323232;
   background-color: #efe5d0;
-  background-image: url("../img/waffle-background.jpg")
+  background-image: url("../img/waffle-background.jpg");
 }
-.about-us .about-us-slogan {
+
+.about-us-slogan {
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
   color: #323232;
 }
 
-.half-wrapper.blog  {
+.blog  {
   background-color: #ffffff;
   background-image: url("../img/strawberry-background.png");
 }
-.half-wrapper.blog .blog-new {
+
+.blog-new {
   font-family: "Roboto";
   font-weight: medium;
   font-size: 16px;
   line-height: 22px;
   color: #323232;
 }
-.half-wrapper.blog .blog-link {
+
+.blog-link {
   font-family: "Roboto";
   font-weight: bold;
   font-size: 24px;
@@ -278,9 +304,10 @@ body *{
   color: #323232;
 }
 
-.half-wrapper.email {
+.email {
   background: #f8f7f4;
 }
+
 .email-sentence {
   font-family: "Roboto";
   font-weight: normal;
@@ -288,14 +315,16 @@ body *{
   line-height: 22px;
   color: #5a5a5a;
 }
-.form-email .form-email-input {
+
+.form-email-input {
   font-family: "Roboto";
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
   color: #999999;
 }
-.form-email .email-btn {
+
+.email-btn {
   font-family: "Roboto";
   font-weight: bold;
   font-size: 18px;
@@ -304,11 +333,15 @@ body *{
 }
 
 .map-block {
+  Width: 1200px;
+  height: 430px;
+  margin: 0 auto;
   border-color: #e9e2c7;
   background-image: url("../img/map-image.jpg")
 }
-.address-paragraph.address-paragraph-1,
-.address-paragraph.address-paragraph-2 {
+
+.address-paragraph-1,
+.address-paragraph-2 {
   font-family: "Roboto";
   font-weight: normal;
   font-size: 14px;
@@ -332,7 +365,7 @@ body *{
   color: #323232;
 }
 
-.address-wrapper .address-btn {
+.address-btn {
   font-family: "Roboto";
   font-weight: bold;
   font-size: 18px;
@@ -348,7 +381,8 @@ body *{
   line-height: 18px;
   color: #ffffff;
 }
-.info-left-column .footer-info-link:first-child {
+
+.footer-info-link:first-child {
   font-weight: bold;
 }
 
@@ -368,7 +402,7 @@ body *{
   color: #ffffff;
 }
 
-.feedback-wrapper .feedback-caption {
+.feedback-caption {
   font-family: "Roboto";
   font-weight: medium;
   font-size: 24px;
@@ -400,7 +434,7 @@ body *{
   color: #999999;
 }
 
-.feedback-form .feedback-btn {
+.feedback-btn {
   font-family: "Roboto";
   font-weight: bold;
   font-size: 18px;
@@ -416,11 +450,11 @@ body *{
   color: #323232;
 }
 
-.basket-item-price span {
+.basket-item-price-value {
   color: #999999;
 }
 
-.basket-total .basket-total-price {
+.basket-total-price {
   font-weight: bold;
   font-size: 15px;
   line-height: 18px;
@@ -461,7 +495,7 @@ body *{
   color: #ffffff;
 }
 
-.main-form *{
+.main-form {
   font-family: "Roboto";
   font-weight: medium;
   font-size: 14px;
@@ -469,28 +503,32 @@ body *{
   color: #ffffff;
 }
 
-.fieldset.fieldset-filler .main-form-legend {
+.main-form-legend {
  line-height: auto;
 }
 
-.fieldset.fieldset-fatness label {
+.fieldset-fatness-label {
   font-size: 16px;
   line-height: 18px;
 }
 
-.main-form-sorting:focus {
+.main-form-sorting {
+  font-family: "Roboto";
+  font-weight: medium;
   font-size: 16px;
   line-height: 18px;
+  color: #ffffff;
+}
+
+.main-form-sorting:focus {
   color: #323232;
 }
 
 .main-form-sorting:hover {
-  font-size: 16px;
-  line-height: 18px;
   color: #323232;
 }
 
-.main-form-sorting .sorting-option {
+.sorting-option {
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
@@ -498,8 +536,11 @@ body *{
 }
 
 .main-form-btn {
+  font-family: "Roboto";
+  font-weight: medium;
   font-size: 16px;
   line-height: 18px;
+  color: #ffffff;
 }
 
 .main-form-btn:hover {
@@ -545,6 +586,7 @@ a.btn {
 .footer-info-link:active {
   color: #ffbc9e;
 }
+
 .copyright-link:hover,
 .copyright-link:active {
   color: #ffbc9e;
@@ -554,16 +596,18 @@ a.btn {
 .breadcrumbs-link:active {
   color: #ffbc9e;
 }
+
 .forgot-link:hover,
 .forgot-link:active {
   color: #ffbc9e;
 }
+
 .new-registration-link:hover,
 .new-registration-link:active {
   color: #ffbc9e;
 }
 
-.main-header {
+.main-header .container {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
@@ -572,21 +616,17 @@ a.btn {
 .main-header-logo {
   display: flex;
   margin: auto;
-  flex-basis: 10%;
-
+  width: 154px;
 }
 
 .main-navigation {
   display: flex;
-  flex-basis: 90%;
-
-
+  width: 970px;
 }
 
 .main-menu {
   display: flex;
   margin-right: auto;
-
 }
 
 .user-menu {
@@ -598,6 +638,35 @@ a.btn {
   flex-direction: column;
 }
 
+.half-wrapper {
+  width: 560px;
+}
+
+.sales-block {
+  display: flex;
+  min-height: 230px;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.company-info {
+  display: flex;
+  min-height: 220px;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.product-block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.company-info {
+  display: flex;
+  min-height: 230
+  background-repeat: no-repeat;px;
+}
 .main-footer {
   display: flex;
   justify-content: space-between;

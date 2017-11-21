@@ -9,6 +9,7 @@
     <body>
 
       <header class="main-header">
+        <div class="container">
 
         <a class="main-header-logo" href="index.html">
           <img class="main-header-logo-img" src="img/svg/logo.svg" alt="Логотип магазина" width="154" height="64">
@@ -67,7 +68,7 @@
                         <img class="basket-preview-icon" src="img/preview-icon-1.png" alt="Изображение товара" width="33" height="33">
                       </td>
                       <td class="basket-item-name">Пломбир с апельсиновым джемом</td>
-                      <td class="basket-item-price">1,5 кг x <span>200 руб.</span></td>
+                      <td class="basket-item-price">1,5 кг x <span class="basket-item-price-value">200 руб.</span></td>
                       <td class="basket-item-full-price">300 руб.</td>
                     </tr>
                     <tr class="table-basket-item table-basket-item-2">
@@ -78,7 +79,7 @@
                         <img class="basket-preview-icon" src="img/preview-icon-2.png" alt="Изображение товара" width="33" height="33">
                       </td>
                       <td class="basket-item-name">Клубничный пломбир с присыпкой из белого шоколада</td>
-                      <td class="basket-item-price">1,5 кг x <span>300 руб.</span></td>
+                      <td class="basket-item-price">1,5 кг x <span class="basket-item-price-value">300 руб.</span></td>
                       <td class="basket-item-full-price">450 руб.</td>
                     </tr>
                   </tbody>
@@ -98,9 +99,11 @@
           C 10 до 20, ежедневно
           <b class="main-header-phone">8 812 450-25-25</b>
         </p>
+      </div>
       </header>
 
       <main>
+        <div class="container">
 
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
@@ -135,13 +138,13 @@
           <fieldset class="fieldset fieldset-fatness">
             <legend class="main-form-legend">Жирность:</legend>
             <input class="input-interactive fatness-radio" type="radio" id="fatness-0" name="fatness" value="fatness-0%">
-            <label for="fatness-0">0%</label>
+            <label class="fieldset-fatness-label" for="fatness-0">0%</label>
             <input class="input-interactive fatness-radio" type="radio" id="fatness-10" name="fatness" value="fatness-10%" checked>
-            <label for="fatness-10">до 10%</label>
+            <label class="fieldset-fatness-label" for="fatness-10">до 10%</label>
             <input class="input-interactive fatness-radio" type="radio" id="fatness-30" name="fatness" value="fatness-30%">
-            <label for="fatness-30">до 30%</label>
+            <label class="fieldset-fatness-label" for="fatness-30">до 30%</label>
             <input class="input-interactive fatness-radio" type="radio" id="fatness-higher-30" name="fatness" value="fatness-higher-30%">
-            <label for="fatness-higher-30">выше 30%</label>
+            <label class="fieldset-fatness-label" for="fatness-higher-30">выше 30%</label>
           </fieldset>
           <fieldset class="fieldset fieldset-filler">
             <legend class="main-form-legend">Наполнители:</legend>
@@ -290,6 +293,7 @@
           <li class="pages-list-item"><a class="pages-list-link" href="#">5</a></li>
           <li class="pages-list-item"><a class="pages-list-link" href="#"><span>&gt;</span></a></li>
         </ul>
+      </div>
       </main>
 
       <footer class="main-footer">
