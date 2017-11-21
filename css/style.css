@@ -466,9 +466,12 @@ body *{
 }
 
 .breadcrumbs {
+  display: flex;
+  justify-content: flex-start;
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-left: 26px;
 }
 
 .breadcrumbs-link {
@@ -489,14 +492,24 @@ body *{
   font-size: 35px;
   line-height: 41px;
   color: #ffffff;
+  margin-left: 27px;
 }
 
 .main-form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 27px;
+  margin-bottom: 40px;
   font-family: "Roboto";
   font-weight: medium;
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
+}
+
+.main-form .fieldset {
+  margin-right: 16px;
+  margin-bottom: 18px;
 }
 
 .main-form-legend {
@@ -532,6 +545,8 @@ body *{
 }
 
 .main-form-btn {
+  width: 143px;
+  height: 36px;
   font-family: "Roboto";
   font-weight: medium;
   font-size: 16px;
@@ -547,10 +562,17 @@ body *{
   color: #323232;
 }
 
-.pages-list{
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.pages-list-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 27px;
+}
+
+.pages-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 190px;
 }
 
 .pages-list-link {
@@ -657,10 +679,16 @@ a.btn {
 
 .product-block {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  padding-left: 27px;
-  padding-right: 27px;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.product-item {
+  margin-left: 13px;
+  margin-right: 13px;
+  width: 267px;
+
 }
 
 .company-info {
