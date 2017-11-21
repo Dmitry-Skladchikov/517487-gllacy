@@ -35,8 +35,6 @@ body *{
 .container {
   width: 1200px;
   margin: 0 auto;
-  box-sizing: border-box;
-  padding: 0 27px;
 }
 
 .main-menu,
@@ -224,10 +222,6 @@ body *{
   line-height: 24px;
 }
 
-.product-section {
-  margin-bottom: 40px;
-}
-
 .product-block {
     list-style: none;
     padding: 0;
@@ -266,6 +260,8 @@ body *{
 
 .about-us {
   height: 310px;
+  width: 1146px;
+  margin: 0 auto;
   margin-bottom: 40px;
   font-family: "Roboto";
   font-weight: bold;
@@ -607,14 +603,13 @@ a.btn {
   color: #ffbc9e;
 }
 
-.main-header .container {
+.main-header {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
 }
 
 .main-header-logo {
-  display: flex;
   margin: auto;
   width: 154px;
 }
@@ -646,6 +641,8 @@ a.btn {
   display: flex;
   min-height: 230px;
   justify-content: space-between;
+  padding-left: 27px;
+  padding-right: 27px;
   margin-bottom: 40px;
 }
 
@@ -654,12 +651,16 @@ a.btn {
   min-height: 220px;
   justify-content: space-between;
   margin-bottom: 40px;
+  padding-left: 27px;
+  padding-right: 27px;
 }
 
 .product-block {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding-left: 27px;
+  padding-right: 27px;
 }
 
 .company-info {
@@ -670,6 +671,8 @@ a.btn {
 .main-footer {
   display: flex;
   justify-content: space-between;
+  padding-left: 27px;
+  padding-right: 27px;
 }
 .copyright-wrapper {
   display: flex;
