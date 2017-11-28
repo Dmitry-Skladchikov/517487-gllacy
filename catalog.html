@@ -55,7 +55,7 @@
                 </form>
               </li>
               <li class="user-menu-item">
-                <a class="btn-basket" href="#">2 Товара</a>
+                <a class="btn-basket btn-bascet-catalog" href="#">2 Товара</a>
                 <form class="form-basket" action="https://echo.htmlacademy.ru" method="get">
                   <table class="table-basket">
                     <caption class="visually-hidden">Товары в Вашей корзине:</caption>
@@ -107,34 +107,40 @@
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="index.html">Главная</a>
             </li>
-            <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="#">Каталог</a>
+            <li>
+              <span class="breadcrumbs-link-after">&raquo;</span>
             </li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="#">Сливочное</a>
+              <a class="breadcrumbs-link" href="#"> Каталог</a>
+            </li>
+            <li>
+              <span class="breadcrumbs-link-after">&raquo;</span>
+            </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="#"> Сливочное</a>
             </li>
           </ul>
 
           <section class="main-form-conteiner">
             <h1 class="catalog-main-title">Сливочное мороженое</h1>
             <form class="main-form" action="https://echo.htmlacademy.ru" method="get">
-              <fieldset class="fieldset fieldset-sorting">
-                <legend class="main-form-legend">Сортировка</legend>
+              <div class="fieldset fieldset-sorting">
+                <h4 class="main-form-legend">Сортировка</h4>
                 <select class="main-form-sorting" name="sorting">
                   <option class="sorting-option">по популярности</option>
                   <option class="sorting-option">сначала недорогие</option>
                   <option class="sorting-option">сначала дорогие</option>
                   <option class="sorting-option">по жирности</option>
                 </select>
-              </fieldset>
-              <fieldset class="fieldset fieldset-price">
-                <legend class="main-form-legend">Цена:</legend>
+              </div>
+              <div class="fieldset fieldset-price">
+                <h4 class="main-form-legend">Цена:</h4>
                 10руб.
                 <input class="input-range" type="range" min="10" max="700" step="10" name="range-price">
                 700руб.
-              </fieldset>
-              <fieldset class="fieldset fieldset-fatness">
-                <legend class="main-form-legend">Жирность:</legend>
+              </div>
+              <div class="fieldset fieldset-fatness">
+                <h4 class="main-form-legend">Жирность:</h4>
                 <input class="input-interactive fatness-radio" type="radio" id="fatness-0" name="fatness" value="fatness-0%">
                 <label class="fieldset-fatness-label" for="fatness-0">0%</label>
                 <input class="input-interactive fatness-radio" type="radio" id="fatness-10" name="fatness" value="fatness-10%" checked>
@@ -143,9 +149,9 @@
                 <label class="fieldset-fatness-label" for="fatness-30">до 30%</label>
                 <input class="input-interactive fatness-radio" type="radio" id="fatness-higher-30" name="fatness" value="fatness-higher-30%">
                 <label class="fieldset-fatness-label" for="fatness-higher-30">выше 30%</label>
-              </fieldset>
-              <fieldset class="fieldset fieldset-filler">
-                <legend class="main-form-legend">Наполнители:</legend>
+              </div>
+              <div class="fieldset fieldset-filler">
+                <h4 class="main-form-legend">Наполнители:</h4>
                 <input class="input-interactive filler-checkbox" type="checkbox" id="filler-chocolate" name="chocolate" value="chocolate" checked>
                 <label for="filler-chocolate">шоколадные</label>
                 <input class="input-interactive filler-checkbox" type="checkbox" id="filler-sugar" name="sugar" value="sugar" checked>
@@ -156,7 +162,7 @@
                 <label for="filler-syrup">сиропы</label>
                 <input class="input-interactive filler-checkbox" type="checkbox" id="filler-jam" name="jam" value="jam">
                 <label for="filler-jam">джемы</label>
-              </fieldset>
+              </div>
               <button class="main-form-btn" type="submit">Применить</button>
             </form>
           </section>
@@ -300,23 +306,15 @@
 
         <footer class="main-footer">
           <div class="social-wrapper">
-            <a class="social social-tw" href="#">
-              <img src="img/svg/twitter.svg" alt="Twitter" width="32" height="32">Twitter
-            </a>
-            <a class="social social-in" href="#">
-              <img src="img/svg/instagram.svg" alt="Instagram" width="32" height="32">Instagram
-            </a>
-            <a class="social social-fb" href="#">
-              <img src="img/svg/fb.svg" alt="Facebook" width="32" height="32">Facebook
-            </a>
-            <a class="social social-vk" href="#">
-              <img src="img/svg/vk.svg" alt="Вконтакте" width="32" height="32">Вконтакте
-            </a>
+            <a class="social social-tw" href="#">Twitter</a>
+            <a class="social social-in" href="#">Instagram</a>
+            <a class="social social-fb" href="#">Facebook</a>
+            <a class="social social-vk" href="#">Вконтакте</a>
           </div>
 
           <div class="footer-info-wrapper">
             <div class="info-left-column">
-              <a class="footer-info-link" href="#">Для поставщиков</a>
+              <a class="footer-info-link for-suppliers" href="#">Для поставщиков</a>
               <a class="footer-info-link" href="#">О производстве</a>
             </div>
             <div class="info-right-column">
@@ -331,8 +329,6 @@
             </a>
             <p class="copyright-text">Сделанно в <a class="copyright-link-text" href="#" alt="Сайт htmlacademy">HTML Academy</a> &copy; 2017</p>
           </div>
-        </div>
-
-      </footer>
+        </footer>
     </body>
   </html>
