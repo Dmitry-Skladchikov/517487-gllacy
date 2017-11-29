@@ -464,7 +464,6 @@ body {
   margin-left: -1px;
   margin-right: -1px;
   margin-top: -6px;
-  z-index: 1;
 }
 
 .product-image-wrapper {
@@ -506,6 +505,10 @@ body {
 
 .product-item-price-smaller {
   font-size: 30px;
+}
+
+.quick-view-wrapper {
+  position: absolute;
 }
 
 .quick-view-btn {
